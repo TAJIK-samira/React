@@ -10,12 +10,20 @@ function App() {
   return(
     <dive className="App">
      <Router>
-      <Navigation />
+      </Header>
+        
+          <Route path= "/" exact component={Home}/>
+          <Route path= "/Post" exact component={Post}/>
+          <Route path= "/Contact" exact component={Contact}/>
+        
+      
 
-        <Route path= "/" exact component={Home}/>
-        <Route path= "/Post" exact component={Post}/>
-        <Route path= "/Contact" exact component={Contact}/>
 
+      
+      </Footer>   
+        <Route path= "/Footer" exact component={Footer}/>
+
+      
      </Router> 
     </dive>
   );
